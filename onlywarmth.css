@@ -1,0 +1,146 @@
+/* styles.css */
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("fonts/ppneuemontreal-book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Akurat Mono";
+  src: url("fonts/AkkuratMono-Regular.woff") format("woff");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+html,
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body {
+  font-family: "PP Neue Montreal";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 50px; /* Increase padding */
+  text-align: center;
+  display: flex; /* Add flex properties to center content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; /* Make header full screen */
+}
+
+header h1 {
+  font-family: "PP Neue Montreal";
+  margin: 0;
+  font-size: 24px;
+  text-transform: uppercase; /* Make text uppercase for a more minimalistic look */
+}
+
+header p {
+  margin: 5px 0 40px;
+  font-size: 14px;
+  max-width: 600px; /* Limit width of text for better readability */
+  text-align: center; /* Center text */
+}
+
+section {
+  padding: 45px 45px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+#donate {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 45px;
+}
+
+#donate-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#donate .donorbox-embed {
+  margin-top: 20px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+#scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 0;
+  background: #fff;
+  transition: height 0.3s ease;
+  mix-blend-mode: difference; /* Add this line */
+}
+
+#scroll-text {
+  position: fixed;
+  top: 0;
+  left: 12px; /* Adjust this value based on the width of your scroll bar */
+  color: #fff;
+  font-size: 18px;
+  mix-blend-mode: difference; /* Add this line */
+}
+
+#svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  header p,
+  section p {
+    font-size: 18px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+}
