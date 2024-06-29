@@ -1,4 +1,9 @@
 /* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 @font-face {
   font-family: "PP Neue Montreal";
@@ -13,11 +18,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
-html,
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+
 body {
   font-family: "PP Neue Montreal";
   margin: 0;
