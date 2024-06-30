@@ -9,3 +9,11 @@ window.addEventListener("scroll", function () {
     100
   ).toFixed(2);
 });
+
+document
+  .getElementById("scroll-down")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    var target = document.getElementById("what");
+    target.scrollIntoView({ behavior: "smooth" });
+  });
