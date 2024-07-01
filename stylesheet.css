@@ -73,19 +73,31 @@ p a {
   text-decoration: underline;
 }
 
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
 #donate {
   background-color: #ffffff;
   color: #000000;
   padding: 45px;
 }
 
-#donate-center {
+#apple-link {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 25px; /* Adjust this value as needed */
 }
 
-#donate .donorbox-embed {
+#donate-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#donorbox-embed {
   margin-top: 20px;
   background-color: #ffffff;
   margin-left: auto;
